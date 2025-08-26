@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- Music player app doesn't backup user data -->
+        <exclude domain="root" />
+        <exclude domain="database" />
+        <exclude domain="sharedpref" />
+        <exclude domain="external" />
+    </cloud-backup>
+    
+    <device-transfer>
+        <!-- Transfer basic app preferences only -->
+        <include domain="sharedpref" path="app_preferences.xml"/>
+    </device-transfer>
+</data-extraction-rules>

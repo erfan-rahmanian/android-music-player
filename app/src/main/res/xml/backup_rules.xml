@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Exclude cache and temporary files -->
+    <exclude domain="cache" />
+    <exclude domain="external-cache" />
+    
+    <!-- Include only necessary app preferences -->
+    <include domain="sharedpref" path="app_preferences.xml"/>
+</full-backup-content>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    
+    <!-- Base application theme -->
+    <style name="Theme.MusicPlayer" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/blue_primary</item>
+        <item name="colorPrimaryVariant">@color/blue_primary_dark</item>
+        <item name="colorOnPrimary">@color/text_primary</item>
+        <item name="colorSecondary">@color/blue_accent</item>
+        <item name="colorSecondaryVariant">@color/blue_accent_dark</item>
+        <item name="colorOnSecondary">@color/text_primary</item>
+        <item name="android:colorBackground">@color/background_primary</item>
+        <item name="colorSurface">@color/background_surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:statusBarColor">@color/background_primary</item>
+        <item name="android:navigationBarColor">@color/background_primary</item>
+    </style>
+
+    <!-- Button Styles -->
+    <style name="BlueButton" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/button_background</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <style name="BlueButtonIcon" parent="Widget.Material3.Button.Icon">
+        <item name="backgroundTint">@color/button_background</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="iconTint">@color/text_primary</item>
+        <item name="cornerRadius">50dp</item>
+        <item name="android:elevation">6dp</item>
+    </style>
+
+    <!-- Card Styles -->
+    <style name="BlueCard" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/background_card</item>
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">8dp</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <!-- Text Styles -->
+    <style name="TitleText">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="SubtitleText">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="SongTitleText">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="ArtistText">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- SeekBar Style -->
+    <style name="BlueSeekBar" parent="Widget.AppCompat.SeekBar">
+        <item name="android:progressTint">@color/seekbar_progress</item>
+        <item name="android:progressBackgroundTint">@color/text_secondary</item>
+        <item name="android:thumbTint">@color/seekbar_thumb</item>
+    </style>
+
+    <!-- Toolbar Style -->
+    <style name="BlueToolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/background_primary</item>
+        <item name="titleTextColor">@color/text_primary</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+</resources>

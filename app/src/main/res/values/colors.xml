@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Blue Colors -->
+    <color name="blue_primary">#2196F3</color>
+    <color name="blue_primary_dark">#1976D2</color>
+    <color name="blue_primary_light">#BBDEFB</color>
+    
+    <!-- Accent Colors -->
+    <color name="blue_accent">#03DAC5</color>
+    <color name="blue_accent_dark">#018786</color>
+    
+    <!-- Background Colors -->
+    <color name="background_primary">#0D47A1</color>
+    <color name="background_secondary">#1565C0</color>
+    <color name="background_card">#1E88E5</color>
+    <color name="background_surface">#42A5F5</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#E3F2FD</color>
+    <color name="text_accent">#FFEB3B</color>
+    
+    <!-- UI Element Colors -->
+    <color name="progress_bar">#00BCD4</color>
+    <color name="button_background">#1976D2</color>
+    <color name="button_background_pressed">#0D47A1</color>
+    <color name="seekbar_thumb">#FFFFFF</color>
+    <color name="seekbar_progress">#00BCD4</color>
+    
+    <!-- Gradient Colors -->
+    <color name="gradient_start">#0D47A1</color>
+    <color name="gradient_end">#2196F3</color>
+    
+    <!-- Status Colors -->
+    <color name="success">#4CAF50</color>
+    <color name="warning">#FF9800</color>
+    <color name="error">#F44336</color>
+    
+    <!-- Overlay -->
+    <color name="overlay_dark">#80000000</color>
+    <color name="overlay_light">#40FFFFFF</color>
+</resources>
