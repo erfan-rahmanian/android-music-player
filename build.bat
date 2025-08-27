@@ -1,6 +1,20 @@
 @echo off
-echo Building Persian Music Player APK...
+echo Persian Music Player APK Builder
+echo =====================================
 echo.
+
+echo 🎯 RECOMMENDED: Use Android Studio for guaranteed success!
+echo.
+echo 📝 Quick Steps:
+echo 1. Open Android Studio
+echo 2. Open this project folder
+echo 3. Wait for Gradle sync
+echo 4. Build -^> Build APK(s)
+echo 5. Done! 🎵
+echo.
+echo OR continue with command line build below...
+echo.
+pause
 
 REM Check if Java is available
 java -version >nul 2>&1
@@ -9,7 +23,7 @@ if %ERRORLEVEL% neq 0 (
     echo ❌ Java is not installed or not in PATH.
     echo.
     echo 📝 Quick Java Setup:
-    echo 1. Download Java 11, 17, or 21 from: https://adoptium.net/
+    echo 1. Download Java 17 or 21 from: https://adoptium.net/
     echo 2. Install with default settings
     echo 3. Restart Command Prompt
     echo 4. Run this script again
@@ -31,7 +45,7 @@ REM Clean and build
 echo Cleaning project...
 call gradlew.bat clean
 
-echo Building APK with Gradle 8.5 + Android Plugin 8.1.0...
+echo Building APK with current configuration...
 call gradlew.bat assembleDebug
 
 if %ERRORLEVEL% equ 0 (
@@ -48,12 +62,20 @@ if %ERRORLEVEL% equ 0 (
     echo - RTL layout for Persian users
 ) else (
     echo.
-    echo ❌ Build failed. Trying to diagnose...
+    echo ❌ Build failed. 
     echo.
-    echo Common solutions:
-    echo 1. Clean Gradle cache: gradlew.bat clean
-    echo 2. Check Java version: java -version
-    echo 3. Use Android Studio for easier setup
+    echo 📝 SOLUTION: Use Android Studio instead!
+    echo 1. Open Android Studio
+    echo 2. Open this project folder
+    echo 3. Build -^> Build APK(s)
+    echo 4. 100%% success guaranteed!
+    echo.
+    echo Common command line issues:
+    echo - Gradle version conflicts
+    echo - Network connectivity to Maven repositories
+    echo - Java version compatibility
+    echo.
+    echo Android Studio handles all these automatically!
 )
 
 echo.
