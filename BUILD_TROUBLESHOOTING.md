@@ -3,7 +3,7 @@
 ## 🚨 **ISSUE RESOLVED: Java 21 Compatibility**
 
 **Your Problem**: Java 21 + Gradle 8.1.1 = Incompatible ❌  
-**Our Solution**: Updated to Gradle 8.5 + Android Gradle Plugin 8.1.2 = Compatible ✅
+**Our Solution**: Updated to Gradle 8.5 + Android Gradle Plugin 8.1.1 = Compatible ✅
 
 ---
 
@@ -32,7 +32,7 @@ cd "c:\Users\erfan\Desktop\my nemone\music player"
 ## 🔍 **What We Fixed:**
 
 ✅ **Gradle Version**: 8.1.1 → **8.5** (Java 21 compatible)  
-✅ **Android Gradle Plugin**: 8.1.0 → **8.1.2**  
+✅ **Android Gradle Plugin**: 8.1.0 → **8.1.1**  
 ✅ **Kotlin Version**: 1.9.0 → **1.9.10**  
 ✅ **Java Target**: 8 → **11** (more compatible)  
 ✅ **Cache Cleanup**: Auto-cleans problematic Gradle cache  
