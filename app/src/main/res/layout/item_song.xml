@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="4dp"
+    android:layoutDirection="locale"
     style="@style/BlueCard"
     android:foreground="?attr/selectableItemBackground"
     android:clickable="true"
@@ -23,7 +24,7 @@
             android:layout_marginEnd="12dp"
             android:background="@drawable/album_art_placeholder"
             android:scaleType="centerCrop"
-            android:contentDescription="Album Art" />
+            android:contentDescription="@string/album_art" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -64,7 +65,7 @@
             android:layout_height="40dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:src="@drawable/ic_more_vert"
-            android:contentDescription="More options"
+            android:contentDescription="@string/more_options"
             android:tint="@color/text_secondary" />
 
     </LinearLayout>

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background"
+    android:layoutDirection="locale"
     tools:context=".MainActivity">
 
     <!-- Top Bar -->
@@ -85,7 +86,7 @@
                     android:layout_marginEnd="16dp"
                     android:background="@drawable/album_art_placeholder"
                     android:scaleType="centerCrop"
-                    android:contentDescription="Album Art" />
+                    android:contentDescription="@string/album_art" />
 
                 <LinearLayout
                     android:layout_width="0dp"

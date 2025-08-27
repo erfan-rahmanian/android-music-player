@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">موزیک پلیر</string>
+    
+    <!-- Main Activity -->
+    <string name="my_music">موزیک‌های من</string>
+    <string name="now_playing">در حال پخش</string>
+    <string name="no_songs_found">هیچ آهنگی پیدا نشد</string>
+    <string name="loading_music">در حال بارگذاری موزیک…</string>
+    
+    <!-- Player Controls -->
+    <string name="play">پخش</string>
+    <string name="pause">مکث</string>
+    <string name="previous">قبلی</string>
+    <string name="next">بعدی</string>
+    <string name="shuffle">تصادفی</string>
+    <string name="repeat">تکرار</string>
+    
+    <!-- Time -->
+    <string name="time_format">%02d:%02d</string>
+    <string name="unknown_time">--:--</string>
+    
+    <!-- Song Info -->
+    <string name="unknown_artist">هنرمند نامشخص</string>
+    <string name="unknown_album">آلبوم نامشخص</string>
+    <string name="unknown_title">عنوان نامشخص</string>
+    
+    <!-- Permissions -->
+    <string name="permission_needed">برای دسترسی به فایل‌های موزیک، مجوز ذخیره‌سازی لازم است</string>
+    <string name="grant_permission">اعطای مجوز</string>
+    
+    <!-- Menu -->
+    <string name="settings">تنظیمات</string>
+    <string name="about">درباره</string>
+    
+    <!-- Notification -->
+    <string name="notification_channel_name">پخش موزیک</string>
+    <string name="notification_channel_description">کنترل‌های پخش موزیک</string>
+    
+    <!-- Playback -->
+    <string name="shuffle_on">تصادفی: روشن</string>
+    <string name="shuffle_off">تصادفی: خاموش</string>
+    <string name="repeat_off">تکرار: خاموش</string>
+    <string name="repeat_one">تکرار: یکی</string>
+    <string name="repeat_all">تکرار: همه</string>
+    
+    <!-- Menu Items -->
+    <string name="action_play_next">پخش بعدی</string>
+    <string name="action_add_to_queue">افزودن به صف</string>
+    <string name="action_song_info">اطلاعات آهنگ</string>
+    <string name="action_refresh">بروزرسانی کتابخانه</string>
+    <string name="song_information">اطلاعات آهنگ</string>
+    <string name="title_label">عنوان:</string>
+    <string name="artist_label">هنرمند:</string>
+    <string name="album_label">آلبوم:</string>
+    <string name="duration_label">مدت زمان:</string>
+    <string name="ok">تأیید</string>
+    <string name="cancel">لغو</string>
+    <string name="about_title">درباره</string>
+    <string name="about_message">موزیک پلیر\nبرنامه‌ای زیبا با طراحی آبی برای پخش موزیک</string>
+    <string name="permission_title">مجوز مورد نیاز</string>
+    <string name="more_options">گزینه‌های بیشتر</string>
+    
+    <!-- Content Descriptions -->
+    <string name="album_art">تصویر آلبوم</string>
+    <string name="music_controls">کنترل‌های موزیک</string>
+    
+    <!-- Error Messages -->
+    <string name="error_loading_music">خطا در بارگذاری موزیک</string>
+    <string name="no_music_files">هیچ فایل موزیکی یافت نشد</string>
+    
+    <!-- Toast Messages -->
+    <string name="music_paused">موزیک متوقف شد</string>
+    <string name="music_playing">موزیک در حال پخش</string>
+    
+</resources>

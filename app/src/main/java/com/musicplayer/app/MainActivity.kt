@@ -237,7 +237,7 @@ class MainActivity : AppCompatActivity() {
                 runOnUiThread {
                     progressBar.visibility = View.GONE
                     emptyState.visibility = View.VISIBLE
-                    Toast.makeText(this@MainActivity, "Error loading music", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@MainActivity, getString(R.string.error_loading_music), Toast.LENGTH_SHORT).show()
                 }
             }
         }
@@ -427,33 +427,33 @@ class MainActivity : AppCompatActivity() {
 
     private fun showSongInfo(song: Song) {
         AlertDialog.Builder(this)
-            .setTitle("Song Information")
+            .setTitle(getString(R.string.song_information))
             .setMessage("""
-                Title: ${song.getDisplayTitle()}
-                Artist: ${song.getDisplayArtist()}
-                Album: ${song.getDisplayAlbum()}
-                Duration: ${song.getFormattedDuration()}
+                ${getString(R.string.title_label)} ${song.getDisplayTitle()}
+                ${getString(R.string.artist_label)} ${song.getDisplayArtist()}
+                ${getString(R.string.album_label)} ${song.getDisplayAlbum()}
+                ${getString(R.string.duration_label)} ${song.getFormattedDuration()}
             """.trimIndent())
-            .setPositiveButton("OK", null)
+            .setPositiveButton(getString(R.string.ok), null)
             .show()
     }
 
     private fun showAboutDialog() {
         AlertDialog.Builder(this)
-            .setTitle("About")
-            .setMessage("Music Player\nA beautiful blue-themed music player app")
-            .setPositiveButton("OK", null)
+            .setTitle(getString(R.string.about_title))
+            .setMessage(getString(R.string.about_message))
+            .setPositiveButton(getString(R.string.ok), null)
             .show()
     }
 
     private fun showPermissionDialog() {
         AlertDialog.Builder(this)
-            .setTitle("Permission Required")
+            .setTitle(getString(R.string.permission_title))
             .setMessage(getString(R.string.permission_needed))
             .setPositiveButton(getString(R.string.grant_permission)) { _, _ ->
                 checkPermissionAndLoadMusic()
             }
-            .setNegativeButton("Cancel") { _, _ ->
+            .setNegativeButton(getString(R.string.cancel)) { _, _ ->
                 finish()
             }
             .show()

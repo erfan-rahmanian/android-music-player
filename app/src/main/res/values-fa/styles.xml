@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Persian/Farsi Font Family Configuration -->
+    <style name="PersianTextStyle" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textDirection">locale</item>
+    </style>
+    
+    <style name="PersianTitleStyle" parent="@style/TitleText">
+        <item name="android:textDirection">locale</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    
+    <style name="PersianSubtitleStyle" parent="@style/SubtitleText">
+        <item name="android:textDirection">locale</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+</resources>
