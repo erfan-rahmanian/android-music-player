@@ -2,25 +2,36 @@
 echo Building Persian Music Player APK...
 echo.
 
+REM Check if Java is available
+java -version >nul 2>&1
+if %ERRORLEVEL% neq 0 (
+    echo.
+    echo ❌ Java is not installed or not in PATH.
+    echo.
+    echo 📝 Quick Java Setup:
+    echo 1. Download Java 11, 17, or 21 from: https://adoptium.net/
+    echo 2. Install with default settings
+    echo 3. Restart Command Prompt
+    echo 4. Run this script again
+    echo.
+    echo OR use Android Studio which includes Java automatically!
+    echo.
+    pause
+    exit /b 1
+)
+
+echo ✅ Java detected. Continuing with build...
+
 REM Clean Gradle cache to avoid version conflicts
 echo Cleaning Gradle cache...
 rmdir /s /q ".gradle" 2>nul
 rmdir /s /q "app\.gradle" 2>nul
 
-REM Check if Java is available
-java -version >nul 2>&1
-if %ERRORLEVEL% neq 0 (
-    echo Error: Java is not installed or not in PATH.
-    echo Please install Java 11, 17, or 21 and ensure it's in your PATH.
-    pause
-    exit /b 1
-)
-
 REM Clean and build
 echo Cleaning project...
 call gradlew.bat clean
 
-echo Building APK with updated Gradle...
+echo Building APK with Gradle 8.4 + Android Plugin 8.1.4...
 call gradlew.bat assembleDebug
 
 if %ERRORLEVEL% equ 0 (
